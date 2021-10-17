@@ -148,27 +148,28 @@ input[type='radio'] {
 }
 
 .slide-text {
+  display: none;
   color: #ffffff;
 }
 
-#btn1:checked ~ .slides-description .slide-info span::after {
-  content: 'Нельзя просто так взять и выполнить таск вовремя';
+#btn1:checked ~ .slides-description .slide-info .text1 {
+  display: block;
   animation: textMoving1 0.5s;
 }
-#btn2:checked ~ .slides-description .slide-info span::after {
-  content: 'Когда успел к дедлайну';
+#btn2:checked ~ .slides-description .slide-info .text2 {
+  display: block;
   animation: textMoving2 0.5s;
 }
-#btn3:checked ~ .slides-description .slide-info span::after {
-  content: 'Когда не умеешь делать мемы :(';
+#btn3:checked ~ .slides-description .slide-info .text3 {
+  display: block;
   animation: textMoving3 0.5s;
 }
-#btn4:checked ~ .slides-description .slide-info span::after {
-  content: 'Дедлайн близко!';
+#btn4:checked ~ .slides-description .slide-info .text4 {
+  display: block;
   animation: textMoving4 0.5s;
 }
-#btn5:checked ~ .slides-description .slide-info span::after {
-  content: 'Делаешь слайдер? Там финал по инту...';
+#btn5:checked ~ .slides-description .slide-info .text5 {
+  display: block;
   animation: textMoving5 0.5s;
 }
 
