@@ -280,3 +280,23 @@ input[type='radio'] {
   border: 1px #3245a6 solid;
   border-radius: 50%;
 }
+
+@media (max-width: 420px) {
+  .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3vh 0;
+    background: #1f1d1d;
+  }
+
+  .slider-container {
+    height: auto;
+  }
+
+  .slides-images {
+    display: flex;
+    width: 2000px;
+    height: 200px;
+    overflow: hidden;
+  }
+}
