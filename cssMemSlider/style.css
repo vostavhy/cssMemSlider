@@ -22,12 +22,12 @@
 .navigation-buttons {
   display: flex;
   justify-content: space-between;
-  width: 40%;
+  width: 20%;
 }
 
 .navigation-buttons__button {
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   background: #3245a6;
   border: 1px #3245a6 solid;
   border-radius: 50%;
@@ -175,7 +175,7 @@ input[type='radio'] {
   animation: textMoving1 0.5s;
 }
 #btn2:checked ~ .slides-description .slide-info span::after {
-  content: 'То чувство, когда успел к дедлайну';
+  content: 'Когда успел к дедлайну';
   animation: textMoving2 0.5s;
 }
 #btn3:checked ~ .slides-description .slide-info span::after {
@@ -264,4 +264,18 @@ input[type='radio'] {
   .navigation-buttons__button_5 {
   background: none;
   border-color: #ffffff;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.button-wrapper:hover > .navigation-buttons__button {
+  background: #ffffff;
 }
