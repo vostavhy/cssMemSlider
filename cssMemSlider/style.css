@@ -19,25 +19,6 @@
   overflow: hidden;
 }
 
-.navigation-buttons {
-  display: flex;
-  justify-content: space-between;
-  width: 20%;
-}
-
-.navigation-buttons__button {
-  width: 20px;
-  height: 20px;
-  background: #3245a6;
-  border: 1px #3245a6 solid;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.navigation-buttons__button:hover {
-  background: #ffffff;
-}
-
 input[type='radio'] {
   display: none;
 }
@@ -194,88 +175,107 @@ input[type='radio'] {
 #btn1:checked
   ~ .slides-description
   .navigation-buttons
-  .navigation-buttons__button_1 {
+  .navigation-buttons__button_1
+  .button-inner {
   background: none;
 }
 
 #btn2:checked
   ~ .slides-description
   .navigation-buttons
-  .navigation-buttons__button_2 {
+  .navigation-buttons__button_2
+  .button-inner {
   background: none;
 }
 
 #btn3:checked
   ~ .slides-description
   .navigation-buttons
-  .navigation-buttons__button_3 {
+  .navigation-buttons__button_3
+  .button-inner {
   background: none;
 }
 
 #btn4:checked
   ~ .slides-description
   .navigation-buttons
-  .navigation-buttons__button_4 {
+  .navigation-buttons__button_4
+  .button-inner {
   background: none;
 }
 
 #btn5:checked
   ~ .slides-description
   .navigation-buttons
-  .navigation-buttons__button_5 {
+  .navigation-buttons__button_5
+  .button-inner {
   background: none;
 }
 
 #btn1:checked:hover
   ~ .slides-description
   .navigation-buttons
-  .navigation-buttons__button_1 {
-  background: none;
+  .navigation-buttons__button_1
+  .button-inner {
   border-color: #ffffff;
 }
 
 #btn2:checked:hover
   ~ .slides-description
   .navigation-buttons
-  .navigation-buttons__button_2 {
-  background: none;
+  .navigation-buttons__button_2
+  .button-inner {
   border-color: #ffffff;
 }
 
 #btn3:checked:hover
   ~ .slides-description
   .navigation-buttons
-  .navigation-buttons__button_3 {
-  background: none;
+  .navigation-buttons__button_3
+  .button-inner {
   border-color: #ffffff;
 }
 
 #btn4:checked:hover
   ~ .slides-description
   .navigation-buttons
-  .navigation-buttons__button_4 {
-  background: none;
+  .navigation-buttons__button_4
+  .button-inner {
   border-color: #ffffff;
 }
 
 #btn5:checked:hover
   ~ .slides-description
   .navigation-buttons
-  .navigation-buttons__button_5 {
-  background: none;
+  .navigation-buttons__button_5
+  .button-inner {
   border-color: #ffffff;
 }
 
-.button-wrapper {
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.navigation-buttons__button {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+
   cursor: pointer;
 }
 
-.button-wrapper:hover > .navigation-buttons__button {
+.navigation-buttons__button:hover .button-inner {
   background: #ffffff;
+}
+
+.button-inner {
+  width: 20px;
+  height: 20px;
+  background: #3245a6;
+  border: 1px #3245a6 solid;
+  border-radius: 50%;
 }
