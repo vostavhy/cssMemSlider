@@ -265,7 +265,6 @@ input[type='radio'] {
   align-items: center;
   width: 40px;
   height: 40px;
-
   cursor: pointer;
 }
 
@@ -294,9 +293,34 @@ input[type='radio'] {
   }
 
   .slides-images {
-    display: flex;
     width: 2000px;
     height: 200px;
-    overflow: hidden;
+  }
+
+  .slides-description {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .navigation-buttons {
+    order: 1;
+  }
+
+  .navigation-buttons__button {
+    width: 20px;
+    height: 20px;
+  }
+
+  .button-inner {
+    width: 10px;
+    height: 10px;
+  }
+
+  .slide-info {
+    order: 2;
+  }
+
+  .slide-text {
+    font-size: 14px;
   }
 }
