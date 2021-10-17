@@ -8,15 +8,14 @@
   max-width: 1000px;
   margin: 10vh auto;
   padding: 3vh 0;
-  background: grey;
+  background: #1f1d1d;
 }
 
 .slider-container {
   margin: 0 auto;
   width: 90%;
-  height: 500px;
-  background: brown;
-  border: 1px #000000 solid;
+  height: 600px;
+  background: #1f1d1d;
   overflow: hidden;
 }
 
@@ -29,14 +28,14 @@
 .navigation-buttons__button {
   width: 40px;
   height: 40px;
-  background: green;
-  border: 1px #000000 solid;
+  background: #3245a6;
+  border: 1px #3245a6 solid;
   border-radius: 50%;
   cursor: pointer;
 }
 
 .navigation-buttons__button:hover {
-  background: yellow;
+  background: #ffffff;
 }
 
 input[type='radio'] {
@@ -52,7 +51,7 @@ input[type='radio'] {
 .slides-images {
   display: flex;
   width: 4500px;
-  height: 400px;
+  height: 500px;
   overflow: hidden;
 }
 
@@ -65,19 +64,19 @@ input[type='radio'] {
 }
 
 .slides-images__image_1 {
-  background-image: url('./images/image-1.png');
+  background-image: url('./images/image-1.jpg');
 }
 .slides-images__image_2 {
-  background-image: url('./images/image-2.png');
+  background-image: url('./images/image-2.jpg');
 }
 .slides-images__image_3 {
-  background-image: url('./images/image-3.png');
+  background-image: url('./images/image-3.jpg');
 }
 .slides-images__image_4 {
-  background-image: url('./images/image-4.png');
+  background-image: url('./images/image-4.jpg');
 }
 .slides-images__image_5 {
-  background-image: url('./images/image-5.png');
+  background-image: url('./images/image-5.jpg');
 }
 
 .slides-description {
@@ -167,24 +166,28 @@ input[type='radio'] {
   }
 }
 
+.slide-text {
+  color: #ffffff;
+}
+
 #btn1:checked ~ .slides-description .slide-info span::after {
-  content: 'Hello Slider 1!';
+  content: 'Нельзя просто так взять и выполнить таск вовремя';
   animation: textMoving1 0.5s;
 }
 #btn2:checked ~ .slides-description .slide-info span::after {
-  content: 'Hello Slider 2!';
+  content: 'То чувство, когда успел к дедлайну';
   animation: textMoving2 0.5s;
 }
 #btn3:checked ~ .slides-description .slide-info span::after {
-  content: 'Hello Slider 3!';
+  content: 'Когда не умеешь делать мемы :(';
   animation: textMoving3 0.5s;
 }
 #btn4:checked ~ .slides-description .slide-info span::after {
-  content: 'Hello Slider 4!';
+  content: 'Дедлайн близко!';
   animation: textMoving4 0.5s;
 }
 #btn5:checked ~ .slides-description .slide-info span::after {
-  content: 'Hello Slider 5!';
+  content: 'Делаешь слайдер? Там финал по инту...';
   animation: textMoving5 0.5s;
 }
 
